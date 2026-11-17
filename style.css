@@ -20,24 +20,34 @@ body {
   color: #333;
 }
 
+.candle {
+  position: absolute;
+  z-index: 2;
+}
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-bottom: 500px;
+  padding: 0;
 }
+
 .cake-container {
-    padding-right: 500px;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  padding: 0;
 }
 
 .cake {
-  position: relative;
-  animation: cake 1s infinite;
-  -webkit-animation: cake 1s infinite;
-  -moz-animation: cake 1s infinite;
-  -o-animation: cake 1s infinite;
+   position: relative;
+   left: 50%;
+   margin-left: -125px;
+   animation: cake 1s infinite;
+   -webkit-animation: cake 1s infinite;
+   -moz-animation: cake 1s infinite;
+   -o-animation: cake 1s infinite;
 }
 
 @keyframes cake {
